@@ -14,7 +14,7 @@ const Footer = () => {
                 <Gamepad2 size={24} className="text-white" />
               </div>
               <h2 className="text-xl font-bold tracking-tighter uppercase">
-                THIS<span className="text-red-500">GAME</span>
+                E<span className="text-red-500">JUNE</span>
               </h2>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
@@ -51,7 +51,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-600 text-xs">
-            © 2024 <span className="text-red-600 font-bold">THISGAME</span>. All Rights Reserved.
+            © 2024 <span className="text-red-600 font-bold">EJUNE STORE</span>. All Rights Reserved.
           </p>
           <div className="flex space-x-6 text-xs text-gray-600">
             <span className="hover:text-white cursor-pointer transition-colors">Privacy Policy</span>
