@@ -1,4 +1,5 @@
 import React from 'react';
+import { ArrowRight } from 'lucide-react';
 
 const HeroBanner = () => {
   return (
@@ -28,8 +29,14 @@ const HeroBanner = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-red-600 hover:bg-red-700 text-white px-12 py-4 rounded-full font-bold shadow-xl shadow-red-600/40 transition-all active:scale-95 hover:tracking-wide">
-              เลือกดูสินค้า
+            <button className="group relative flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold shadow-lg shadow-red-600/30 transition-all active:scale-95">
+              <span>เลือกดูสินค้า</span>
+              
+              {/* ลูกศรจะขยับ "เฉพาะ" เมื่อเมาส์ชี้ที่ตัวปุ่มนี้เท่านั้น เพราะ group อยู่ที่นี่ */}
+              <ArrowRight 
+                size={20} 
+                className="transition-transform duration-300 group-hover:translate-x-1.5" 
+              />
             </button>
             <button className="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-12 py-4 rounded-full font-bold transition-all active:scale-95">
               ช่วยเหลือ
